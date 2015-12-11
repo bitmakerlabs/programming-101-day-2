@@ -30,6 +30,10 @@ gem install dm-sqlite-adapter
 gem install data_mapper
 ```
 
+```
+gem install sinatra
+```
+
 ## Today's Goals
 
 * Understand basic building blocks of any logical programming language
