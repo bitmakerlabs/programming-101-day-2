@@ -1,0 +1,38 @@
+<% if @uncompleted_todos.count == 0 %>
+  <aside class="todo-empty">
+    <img src="images/spaceship.png" alt="You're done!">
+    <h2>You're all done!</h2>
+  </aside>
+<% else %>
+  <div class="todos-remaining"><strong><%= @uncompleted_todos.count %></strong> items left!</div>
+<% end %>
+
+<ul id="todos-list">
+  <% @todos.each do |todo| %>
+    <% if todo.completed == true %>
+      <% css_class = "is-complete" %>
+    <% else %>
+      <% css_class = "" %>
+    <% end %>
+    <li class="todo <%= css_class %>">
+      <a href="/update/<%= todo.id %>">
+        <%= todo.title %>
+      </a>
+    </li>
+  <% end %>
+</ul>
+
+<div id="todos-actions">
+  <ul id="todos-filters">
+    <li class="todo-filter all is-active">
+      <a>All</a>
+    </li>
+    <li class="todo-filter remaining">
+      <a>Remaining</a>
+    </li>
+    <li class="todo-filter completed">
+      <a>Completed</a>
+    </li>
+  </ul>
+  <a href="/new" id="new-todo-link">New Todo</a>
+</div>

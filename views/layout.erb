@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task List</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+    <header>
+      <h1>ToDos</h1>
+    </header>
+
+    <main id="todo-panel">
+
+      <%= yield %>
+
+    </main>
+
+    <footer>
+      <small>Created in the future at <img src="images/bitmaker.png" alt="Bitmaker" class="footer-wordmark" /></small>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/todos.js" charset="utf-8"></script>
+
+  </body>
+</html>
