@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task List</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+    <header>
+      <h1>ToDos</h1>
+    </header>
+
+    <main id="todo-panel">
+
+      <aside class="todo-empty">
+        <img src="images/spaceship.png" alt="You're done!">
+        <h2>You're all done!</h2>
+      </aside>
+
+      <div class="todos-remaining"><strong id="counter">5</strong> items left!</div>
+
+      <ul id="todos-list">
+        <li class="todo">
+          <a>
+            Build time machine
+          </a>
+        </li>
+        <li class="todo is-complete">
+          <a>
+            Travel through time
+          </a>
+        </li>
+        <li class="todo">
+          <a>
+            Meet parents
+          </a>
+        </li>
+        <li class="todo">
+          <a>
+            Convince them to fall in love
+          </a>
+        </li>
+        <li class="todo">
+          <a>
+            Go back to the future
+          </a>
+        </li>
+      </ul>
+
+      <div id="todos-actions">
+        <ul id="todos-filters">
+          <li class="todo-filter is-active" id="show-all">
+            <a>All</a>
+          </li>
+          <li class="todo-filter" id="show-remaining">
+            <a>Remaining</a>
+          </li>
+          <li class="todo-filter" id="show-completed">
+            <a>Completed</a>
+          </li>
+        </ul>
+      </div>
+
+    </main>
+
+    <footer>
+      <small>Created in the future at <img src="images/bitmaker.png" alt="Bitmaker" class="footer-wordmark" /></small>
+    </footer>
+
+    <script src="js/todos.js" charset="utf-8"></script>
+
+  </body>
+</html>

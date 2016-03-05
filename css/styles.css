@@ -1,0 +1,166 @@
+/*
+  Todo List App Styles
+
+  This file contains all of the styles for the Todo List App.
+  The styles are organized from general to specific, with styles for specific
+  parts of the interface prefaced with a commented title.
+*/
+
+/* Baseline App Styles */
+
+html {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+h1 {
+  font-weight: 200;
+  text-align: center;
+  color: #990000;
+}
+
+footer {
+  text-align: center;
+}
+
+small {
+  font-size: 0.75rem;
+  font-weight: 200;
+  line-height: 1.5;
+  color: #ccc;
+  vertical-align: middle;
+}
+
+a {
+  color: #990000;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 0.75em;
+  transition: all 0.15s ease-out;
+}
+
+/* Area to display when all todos are done */
+/* Question: do we want this visible all the time? */
+.todo-empty {
+  display: none;
+  text-align: center;
+  padding: 30px;
+}
+
+.todo-empty > img {
+  max-width: 150px;
+}
+
+.todo-empty > h2 {
+  margin-bottom: 0;
+}
+
+/* Area to display remaining todo count */
+.todos-remaining {
+  font-size: 0.75rem;
+  text-align: center;
+  color: #990000;
+  padding: 20px;
+}
+
+#todo-panel {
+  background-color: white;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* Todo List Container */
+#todos-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Individual todo list items and links within */
+.todo {
+  height: 50px;
+  position: relative;
+  border-bottom: 1px solid #e4e4e4;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+.todo:last-child {
+  border-bottom: 0;
+}
+
+.todo > a {
+  position: relative;
+  top: 8px;
+  font-size: 20px;
+  color: black;
+  padding: 0;
+  transition: all 0.1s linear;
+}
+
+.todo > a:hover {
+  color: #990000;
+}
+
+.todo > a::before {
+  content: url('../images/unchecked.svg');
+  float: left;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+/* Completed Todos */
+.todo.is-complete > a::before {
+  content: url('../images/checked.svg');
+}
+
+.todo.is-complete > a {
+  color: #ccc;
+  font-weight: 200;
+  text-decoration: line-through;
+}
+
+/* Todo List footer with filters */
+#todos-actions {
+  border-top: 1px solid #e4e4e4;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Filter List */
+#todos-filters {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Individual filter items */
+.todo-filter {
+  display: inline-block;
+}
+
+.todo-filter > a:hover {
+  color: white;
+  background-color: #990000;
+}
+
+.todo-filter.is-active > a {
+  color: white;
+  background-color: #990000;
+}
+
+/* Bitmaker wordmark in footer */
+.footer-wordmark {
+  display: inline-block;
+  max-height: 20px;
+  vertical-align: middle;
+}
