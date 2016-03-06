@@ -11,6 +11,11 @@ function updateCounter() {
   var remainingTodosCount = allTodos.length - completedTodos.length;
   
   document.getElementById("counter").innerHTML = remainingTodosCount;
+
+  // Make the spaceship appear when remainingTodosCount is zero.
+  // Make it disappear again when remainingTodosCount is greater than zero.
+  // WRITE CODE HERE
+
 }
 
 // Run the function you just wrote to update the counter
@@ -30,19 +35,19 @@ for (var i=0; i < allTodoLinks.length; i++) {
 function deactivateAllFilters() {
   var filters = document.querySelectorAll(".todo-filter");
   for (var i=0; i < filters.length; i++) {
-    //WRITE CODE HERE
+    // WRITE CODE HERE
   }
 }
 
 // Write a function that will un-hide all the todos
 function showAllTodos() {
   var todos = document.querySelectorAll(".todo");
-  //WRITE CODE HERE
+  // WRITE CODE HERE
 }
 
 // Write a function that will hide all the todos
 function hideAllTodos() {
-  //WRITE CODE HERE
+  // WRITE CODE HERE
 }
 
 // Add an event listener to the 'all' filter button that will show all todos when clicked
@@ -56,11 +61,11 @@ document.getElementById("show-all").addEventListener("click", function() {
 document.getElementById("show-remaining").addEventListener("click", function() {
     deactivateAllFilters();
     showAllTodos();
-    //WRITE CODE HERE
+    // WRITE CODE HERE
     this.classList.add('is-active');
 });
 
 // Add an event listener to the 'completed' filter button that will show completed todos when clicked
 document.getElementById("show-completed").addEventListener("click", function() {
-  //WRITE CODE HERE
+  // WRITE CODE HERE
 });
