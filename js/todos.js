@@ -4,11 +4,11 @@ function updateCounter() {
   var allTodos = document.querySelectorAll(".todo");
   
   // Enter the correct class to select all completed todos. 
-  var completedTodos = document.querySelectorAll("CHANGE ME");
+  var completedTodos = document.querySelectorAll(".todo.is-complete");
   
   // Calculate how many todos are left.
-  // Hint: Calculate the number completed minus the total number.
-  var remainingTodosCount = "CHANGE ME";
+  // Hint: Calculate the total number of todos MINUS the number completed.
+  var remainingTodosCount = allTodos.length - completedTodos.length;
   
   document.getElementById("counter").innerHTML = remainingTodosCount;
 
@@ -20,12 +20,16 @@ function updateCounter() {
 }
 
 // Run the function you just wrote to update the counter
-// WRITE CODE HERE
+updateCounter()
 
 // Add an event listener to each of the todos which will toggle the 'is-complete' css class when clicked
-var items = document.querySelectorAll(".todo a");
-for (var i=0; i < items.length; i++) {
-  //WRITE CODE HERE  
+var allTodoLinks = document.querySelectorAll(".todo a");
+for (var i=0; i < allTodoLinks.length; i++) {
+  var theLink = allTodoLinks[i];
+  theLink.addEventListener("click", function(){
+    this.parentNode.classList.toggle('is-complete');
+    updateCounter();
+  }) 
 }
 
 // Write a function that will un-highlight all the filter buttons
