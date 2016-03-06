@@ -11,12 +11,6 @@ function updateCounter() {
   var remainingTodosCount = allTodos.length - completedTodos.length;
   
   document.getElementById("counter").innerHTML = remainingTodosCount;
-
-  if (remainingTodosCount == 0) {
-    document.querySelector('.todo-empty').style.display = 'block';
-  } else {
-    document.querySelector('.todo-empty').style.display = 'none';
-  }
 }
 
 // Run the function you just wrote to update the counter
