@@ -16,8 +16,8 @@ Once you have an account at Cloud9, set up a new workspace:
 
 ## Today's Goals
 
-* Understand basic programming principles
-* Understand Javascript basics
+* Review basic programming principles
+* Review Javascript basics
 * Understand Javascript events
 * Use Javascript to add some functionality to our existing base
 * Understand what our application lacks and what technologies we would need to use to take it further
