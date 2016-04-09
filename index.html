@@ -8,67 +8,48 @@
   <body>
 
     <header>
-      <h1>ToDos</h1>
+      <h1>My Tasks</h1>
     </header>
 
-    <main id="todo-panel">
+    <main id="task-panel">
 
-      <aside class="todo-empty">
-        <img src="images/spaceship.png" alt="You're done!">
-        <h2>You're all done!</h2>
-      </aside>
+      <div class="tasks-remaining"><strong id="counter">5</strong> items left!</div>
 
-      <div class="todos-remaining"><strong id="counter">5</strong> items left!</div>
-
-      <ul id="todos-list">
-        <li class="todo">
+      <ul id="tasks-list">
+        <li class="task">
           <a>
-            Build time machine
+            Learn to code
           </a>
         </li>
-        <li class="todo is-complete">
+        <li class="task is-complete">
           <a>
-            Travel through time
+            Learn some HTML
           </a>
         </li>
-        <li class="todo">
+        <li class="task">
           <a>
-            Meet parents
+            Learn some CSS
           </a>
         </li>
-        <li class="todo">
+        <li class="task">
           <a>
-            Convince them to fall in love
+            Learn some Javascript
           </a>
         </li>
-        <li class="todo">
+        <li class="task">
           <a>
-            Go back to the future
+            Build a cool app
           </a>
         </li>
       </ul>
 
-      <div id="todos-actions">
-        <ul id="todos-filters">
-          <li class="todo-filter is-active" id="show-all">
-            <a>All</a>
-          </li>
-          <li class="todo-filter" id="show-remaining">
-            <a>Remaining</a>
-          </li>
-          <li class="todo-filter" id="show-completed">
-            <a>Completed</a>
-          </li>
-        </ul>
-      </div>
-
     </main>
 
     <footer>
-      <small>Created in the future at <img src="images/bitmaker.png" alt="Bitmaker" class="footer-wordmark" /></small>
+      <small>Created at <img src="images/bitmaker.png" alt="Bitmaker" class="footer-wordmark" /></small>
     </footer>
 
-    <script src="js/todos.js" charset="utf-8"></script>
+    <script src="js/tasks.js" charset="utf-8"></script>
 
   </body>
 </html>

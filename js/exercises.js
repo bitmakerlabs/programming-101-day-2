@@ -6,8 +6,6 @@
 
 // Arrays
 
-// Objects
-
 // Variables
 
 // Expressions
