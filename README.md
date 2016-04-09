@@ -1,4 +1,4 @@
-# Programming 101 - Day 2 - Javascript
+# Programming 101 - Day 2 - More Javascript
 
 Day two of a weekend workshop at Bitmaker that introduces all of the concepts required to build a simple web application. We will explore all the aspects involved in basic web development, namely HTML, Cascading Style Sheets (CSS) and an introduction to some basic JavaScript.
 
@@ -18,6 +18,7 @@ Once you have an account at Cloud9, set up a new workspace:
 
 * Review basic programming principles
 * Review Javascript basics
-* Understand Javascript events
+* Understand basic Javascript events
+* Explore problem solving techniques
 * Use Javascript to add some functionality to our existing base
 * Understand what our application lacks and what technologies we would need to use to take it further
