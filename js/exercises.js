@@ -1,17 +1,9 @@
-// Printing output
+// Create an array that contains the first names of 3 people you know
 
-// Strings
+// Print each of their names preceded by the word "Hello"
 
-// Numbers
+// Replace one of the names in your array with a new name
 
-// Arrays
+// Print each name again preceded by the word "Hello"
 
-// Objects
 
-// Variables
-
-// Expressions
-
-// Loops
-
-// Functions
